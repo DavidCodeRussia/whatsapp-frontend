@@ -1,0 +1,34 @@
+@import './scss/base/reset.scss';
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: local('SF Pro Text'), url('./assets/fonts/SFProText-Regular.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 100 400;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: local('SF Pro Text'), url('./assets/fonts/SFProText-Semibold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: local('SF Pro Text'), url('./assets/fonts/SFProText-Bold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 600 900;
+}
+
+body {
+  margin: 0;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

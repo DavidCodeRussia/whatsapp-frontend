@@ -1,0 +1,31 @@
+@import '../../scss//variables.scss';
+
+.message {
+  align-self: end;
+
+  &IsMe {
+    align-self: start;
+
+    .messageBubble {
+      background: #fff;
+      border-radius: 12px 12px 12px 0;
+    }
+  }
+  &Content {
+    display: flex;
+    max-width: 440px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &Bubble {
+    background: $bg_main_green;
+    box-shadow: 0px 5px 5px rgba(54, 116, 255, 0.196733);
+    border-radius: 12px 12px 0 12px;
+    padding: 15px;
+    margin-bottom: 8px;
+  }
+  &Text {
+    color: #000;
+    line-height: 20px;
+  }
+}

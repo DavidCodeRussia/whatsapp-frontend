@@ -1,0 +1,57 @@
+@import '../../scss/variables.scss';
+
+.backgroundTop {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 222px;
+
+  background-color: $bg_main_green;
+}
+
+.landing {
+  &Wrapper {
+    padding: 0 36px 92px 36px;
+  }
+
+  &Header {
+    min-height: 39px;
+    margin: 27px 0;
+    display: flex;
+    align-items: center;
+
+    &Title {
+      color: $text_white;
+      margin-left: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      vertical-align: middle;
+      cursor: default;
+    }
+  }
+
+  &Window {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 17px 50px 0 rgba(11, 20, 26, 0.19), 0 12px 15px 0 rgba(11, 20, 26, 0.24);
+
+    &Inner {
+      min-height: 300px;
+      padding: 52px 82px 52px 58px;
+    }
+    &Title {
+      margin-bottom: 28px;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: normal;
+      color: $text_dark_blue;
+    }
+
+    .apiTokenField {
+      margin: 10px 0;
+    }
+  }
+}
