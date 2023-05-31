@@ -7,7 +7,7 @@ import { useAppDispatch } from '../../reduxToolkit/store';
 import { setData } from '../../reduxToolkit/authorizationSlice';
 
 import * as Yup from 'yup';
-import * as svg from '../../assets/svg';
+import * as svg from '@assets/svg';
 
 import s from './Login.module.scss';
 

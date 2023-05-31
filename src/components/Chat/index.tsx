@@ -2,18 +2,18 @@ import { useEffect } from 'react';
 import { Formik, Field } from 'formik';
 import { useSelector } from 'react-redux';
 import * as Yup from 'yup';
-import * as svg from '../../assets/svg';
+import * as svg from '@assets/svg';
 import { Message } from '../Message';
 import {
   getAuthorization,
   getApiTokenInstance,
   getpPhoneNumber,
   getMessages,
-} from '../../reduxToolkit/selectors';
-import { useGetNotificationQuery } from '../../API/apiMessageSlice';
-import { useAppDispatch } from '../.././reduxToolkit/store';
-import { setMessages } from '../../reduxToolkit/messagesSlice';
-import { useSendMessageMutation, useReadNotificationMutation } from '../../API/apiMessageSlice';
+} from '@redux/selectors';
+import { useGetNotificationQuery } from '@api/apiMessageSlice';
+import { useAppDispatch } from '@redux/store';
+import { setMessages } from '@redux/messagesSlice';
+import { useSendMessageMutation, useReadNotificationMutation } from '@api/apiMessageSlice';
 
 import s from './Chat.module.scss';
 
@@ -105,10 +105,13 @@ export const Chat = () => {
                 <form className={s.landingWindowFormInner} onSubmit={handleSubmit}>
                   <Field className={s.landingWindowInput} type="text" id="message" name="message" />
                   {values.message.length !== 0 ? (
-                    //@ts-ignore
-                    <svg.ArrowRight onClick={handleSubmit} />
+                    <button type="submit">
+                      <svg.ArrowRight />
+                    </button>
                   ) : (
-                    <svg.Microphone />
+                    <button>
+                      <svg.Microphone />
+                    </button>
                   )}
                 </form>
               )}

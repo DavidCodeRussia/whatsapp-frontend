@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { getMessagesFromLS } from '../../utils/getMessagesFromLS';
+import { getMessagesFromLS } from '@utils/getMessagesFromLS';
 
 const messages = getMessagesFromLS();
 

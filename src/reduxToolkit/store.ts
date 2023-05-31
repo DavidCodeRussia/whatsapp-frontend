@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
-import { apiMessageSlice } from '../API/apiMessageSlice';
+import { apiMessageSlice } from '@api/apiMessageSlice';
 import authorizationSlice from './authorizationSlice';
 import messagesSlice from './messagesSlice';
 

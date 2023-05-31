@@ -4,10 +4,10 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import { Login } from './components/Login';
-import { RequireAuth } from './components/RequireAuth';
-import { Chat } from './components/Chat';
-import { Layout } from './components/Layout';
+import { Login } from '@components/Login';
+import { RequireAuth } from '@components/RequireAuth';
+import { Chat } from '@components/Chat';
+import { Layout } from '@components/Layout';
 
 function App() {
   const router = createBrowserRouter(

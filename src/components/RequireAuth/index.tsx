@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { getAuthorization } from '../../reduxToolkit/selectors';
+import { getAuthorization } from '@redux/selectors';
 
 export const RequireAuth = () => {
   const navigate = useNavigate();

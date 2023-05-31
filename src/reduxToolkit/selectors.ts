@@ -1,4 +1,4 @@
-import { TRootState } from '../reduxToolkit/store';
+import { TRootState } from '@redux/store';
 
 export const getAuthorization = (state: TRootState) => state.authorization.idInstance;
 export const getApiTokenInstance = (state: TRootState) => state.authorization.apiTokenInstance;
